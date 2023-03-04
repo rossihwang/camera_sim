@@ -1,0 +1,18 @@
+{
+  "world": "",
+  "cameras": [
+    {
+      "namespace": "left",
+      "model": "camera", 
+      "position": [0.0, 0.0, 0.5],
+      "orientation": [0.0, 0.0, 0.0]
+    },
+    {
+      "namespace": "right",
+      "model": "camera",
+      "position": [0.0, -0.1, 0.5],
+      "orientation": [0.0, 0.0, 0.0]
+    }
+  ],
+  "master_uri": ""
+}
