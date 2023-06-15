@@ -18,6 +18,9 @@ Creating synthetic image data via Gazebo
 
 
 ## Run camera_sim
+Some environment variables may need to be configured
+- GAZEBO_MODEL_PATH: your model directories
+- GAZEBO_MODEL_DATABASE_URI: set to "" to avoid gazebo stucks on startup
 
 ```shell
 ros2 launch camera_sim camera_sim_launch.py # run a gzserver
