@@ -1,6 +1,6 @@
 {
   "world": "",
-  "cameras": [
+  "sensors": [
     {
       "namespace": "",
       "model": "camera",

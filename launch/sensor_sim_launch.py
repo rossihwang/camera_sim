@@ -26,7 +26,7 @@ def generate_launch_description():
     world_file = os.path.join(sensor_sim_dir, "world",
                               world+".world") if world else ""
 
-    for c in configs["cameras"]:
+    for c in configs["sensors"]:
         sdf_file = os.path.join(sensor_sim_dir, "models", c["model"]+".sdf")
         cameras.append(
             {
