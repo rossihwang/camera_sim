@@ -14,8 +14,8 @@ from json import load
 def generate_launch_description():
 
     configs = None
-    camera_sim_dir = get_package_share_directory("camera_sim")
-    default_config_file = os.path.join(camera_sim_dir, "configs", "stereo.json")
+    sensor_sim_dir = get_package_share_directory("sensor_sim")
+    default_config_file = os.path.join(sensor_sim_dir, "configs", "stereo.json")
 
     with open(default_config_file, "r") as f:
         configs = load(f)
@@ -23,11 +23,11 @@ def generate_launch_description():
     cameras = []
 
     world = configs["world"]
-    world_file = os.path.join(camera_sim_dir, "world",
+    world_file = os.path.join(sensor_sim_dir, "world",
                               world+".world") if world else ""
 
     for c in configs["cameras"]:
-        sdf_file = os.path.join(camera_sim_dir, "models", c["model"]+".sdf")
+        sdf_file = os.path.join(sensor_sim_dir, "models", c["model"]+".sdf")
         cameras.append(
             {
               "model": c["model"],

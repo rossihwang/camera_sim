@@ -10,9 +10,9 @@ Creating synthetic image data via Gazebo
 
 
 
-## Install camera_sim
+## Install sensor_sim
 
-- Clone camera_sim to the src directory under your ROS workspace
+- Clone sensor_sim to the src directory under your ROS workspace
 - Colcon build it
 
 
